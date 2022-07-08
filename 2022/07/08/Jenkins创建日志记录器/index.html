@@ -5,12 +5,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="Jenkins创建日志记录器, DevOps,Go,Jenkins,Kubernetes等">
-    <meta name="description" content="一、通过Jenkins UI界面创建[1]
-
-二、通过Groovy Hook Scripts[2]创建
-import jenkins.model.Jenkins
-import java.util.logging.Level
-import h">
+    <meta name="description" content="Jenkins使用java.util.logging来记录日志。默认情况下，java.util.logging将INFO以上的所有日志发送到stdout。通过创建自日志记录器，可以将相关日志分组在一起。那如何创建呢？
+一、通过Jenkins">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -437,10 +433,9 @@ import h">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>一、通过Jenkins UI界面创建<sup>[1]</sup></p>
-<p><img src="/../images/%E6%96%B0%E5%BB%BA%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95%E5%99%A8.png"></p>
-<p>二、通过Groovy Hook Scripts<sup>[2]</sup>创建</p>
-<pre class=" language-groovy"><code class="language-groovy"><span class="token keyword">import</span> jenkins<span class="token operator">.</span>model<span class="token operator">.</span>Jenkins
+                <p>Jenkins使用<code>java.util.logging</code>来记录日志。默认情况下，<code>java.util.logging</code>将<code>INFO</code>以上的所有日志发送到stdout。通过创建自日志记录器，可以将相关日志分组在一起。那如何创建呢？</p>
+<h1 id="一、通过Jenkins-UI界面创建-1"><a href="#一、通过Jenkins-UI界面创建-1" class="headerlink" title="一、通过Jenkins UI界面创建[1]"></a>一、通过Jenkins UI界面创建<sup>[1]</sup></h1><p><img src="/../images/%E6%96%B0%E5%BB%BA%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95%E5%99%A8.png"></p>
+<h1 id="二、通过Groovy-Hook-Scripts-2-创建"><a href="#二、通过Groovy-Hook-Scripts-2-创建" class="headerlink" title="二、通过Groovy Hook Scripts[2]创建"></a>二、通过Groovy Hook Scripts<sup>[2]</sup>创建</h1><pre class=" language-groovy"><code class="language-groovy"><span class="token keyword">import</span> jenkins<span class="token operator">.</span>model<span class="token operator">.</span>Jenkins
 <span class="token keyword">import</span> java<span class="token operator">.</span>util<span class="token operator">.</span>logging<span class="token operator">.</span>Level
 <span class="token keyword">import</span> hudson<span class="token operator">.</span>logging<span class="token operator">.</span>LogRecorderManager
 <span class="token keyword">import</span> hudson<span class="token operator">.</span>logging<span class="token operator">.</span>LogRecorder
