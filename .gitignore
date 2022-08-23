@@ -1,0 +1,6 @@
+# IntelliJ IDEA
+.idea
+
+# hugo
+.hugo_build.lock
+
