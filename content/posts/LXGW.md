@@ -13,7 +13,7 @@ categories : [
 
 # LXGW WenKai / 霞鹜文楷
 
-霞鹜文楷是一款开源中文字体，具体的介绍可查看：https://github.com/lxgw/LxgwWenKai
+霞鹜文楷是一款开源中文字体，具体的介绍可查看：[https://github.com/lxgw/LxgwWenKai](https://github.com/lxgw/LxgwWenKai)
 
 ![img](https://raw.githubusercontent.com/lxgw/LxgwWenKai/main/documentation/wenkai-1.png)
 
